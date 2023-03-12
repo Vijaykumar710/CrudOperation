@@ -49,9 +49,7 @@ public class StudentService {
         studentRepository.deleteById(id);
     }
 
-    /*public Optional<Student> getStudentById(long id){
-            return studentRepository.findById(id);
-     }*/
+    
     public Student updateStudents(Student student, long id) {
         Optional<Student> idNumber = studentRepository.findById(id);
         if (idNumber.isPresent()) {
@@ -65,17 +63,4 @@ public class StudentService {
             return null;
         }
     }
-} /* Optional<Student> studentOptional = studentRepository.findById(id);
-
-        if (studentOptional.isEmpty())
-            return ResponseEntity.notFound().build();
-
-        student.setId(id);
-
-        studentRepository.save(student);
-
-        return ResponseEntity.ok().build();
-    }*/
-/*public void deleteStudentById(Long id) {//getById
-        studentRepository.deleteById(id);
-    }*///ee
+}
