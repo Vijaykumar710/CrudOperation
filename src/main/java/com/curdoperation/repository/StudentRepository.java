@@ -9,8 +9,4 @@ import org.springframework.stereotype.Repository;
 public interface StudentRepository extends JpaRepository<Student, Long> {
     //predefined class import here...
 
-/*
-    @Query("select mail_id from customer_profile where tenant_uid = ?1 AND uuid=?2 limit 1", nativeQuery = true)
-public
-    public  getEmailByUid(tenantUid: String, uuid: String): String?*/
 }
